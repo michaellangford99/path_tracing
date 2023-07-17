@@ -43,6 +43,12 @@ typedef struct {
 	glm::vec3 c1;
 } bounding_box_t;
 
+class brdf
+{
+public:
+ float sample_brdf(glm::vec3 inbound, glm::vec3 outbound) = 0;
+}
+
 class element
 {
 public:
